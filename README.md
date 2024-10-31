@@ -17,26 +17,6 @@ T 타입 인스턴스를 사용하는 경우에는 Credit Balance가 0.5 이하�
 
 <br>
 
-## Credit Balance 알리미
-
-### 아키텍처
-<p align="center">
-  <img src="https://github.com/tkdgur0906/EC2TypeAdvisor/assets/39580658/8e9b243f-ecc9-4ca2-8ad2-6328fcc465c7" width="700">
-</p>
-
-- 사용자의 모든 T 타입 인스턴스 모니터링
-- CloudWatch 알림으로 CreditBalance ≤ 0.5인 경우 SNS Trigger
-- SNS Topic 통해 Lambda 에 상태 정보 전달
-- 인스턴스 정보를 담은 메시지 생성 및 전송
-- Incoming webhook 실시간 알림 생성
-
-<br>
-
-### 실행 결과
-<p align="center">
-  <img src="https://github.com/tkdgur0906/EC2TypeAdvisor/assets/39580658/8f88d8b5-fc2e-4d6f-a0ec-9b6321910610" width="350">
-</p>
-
 ## EC2 Daily Report
 
 ### 아키텍처
@@ -55,6 +35,26 @@ T 타입 인스턴스를 사용하는 경우에는 Credit Balance가 0.5 이하�
 ### 실행 결과
 <p align="center">
   <img src="https://github.com/tkdgur0906/EC2TypeAdvisor/assets/39580658/3f59cc4b-1a97-489c-85cc-d3c801774302" width="350">
+</p>
+
+## Credit Balance 알리미
+
+### 아키텍처
+<p align="center">
+  <img src="https://github.com/tkdgur0906/EC2TypeAdvisor/assets/39580658/8e9b243f-ecc9-4ca2-8ad2-6328fcc465c7" width="700">
+</p>
+
+- 사용자의 모든 T 타입 인스턴스 모니터링
+- CloudWatch 알림으로 CreditBalance ≤ 0.5인 경우 SNS Trigger
+- SNS Topic 통해 Lambda 에 상태 정보 전달
+- 인스턴스 정보를 담은 메시지 생성 및 전송
+- Incoming webhook 실시간 알림 생성
+
+<br>
+
+### 실행 결과
+<p align="center">
+  <img src="https://github.com/tkdgur0906/EC2TypeAdvisor/assets/39580658/8f88d8b5-fc2e-4d6f-a0ec-9b6321910610" width="350">
 </p>
 
 
